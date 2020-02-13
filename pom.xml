@@ -8,7 +8,8 @@
 		<module>Cloud_HelloProvider</module>
 		<module>Cloud_HelloConsumer</module>
         <module>Cloud_Server</module>
-    </modules>
+		<module>Cloud_Zuul</module>
+	</modules>
     <parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>

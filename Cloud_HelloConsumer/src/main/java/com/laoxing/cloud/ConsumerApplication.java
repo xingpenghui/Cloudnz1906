@@ -14,7 +14,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @SpringBootApplication
 @EnableSwagger2 //启用Swagger
-@EnableDiscoveryClient //发现服务
+@EnableDiscoveryClient //发现和注册服务
 @EnableFeignClients //启用Feign
 public class ConsumerApplication {
     public static void main(String[] args) {

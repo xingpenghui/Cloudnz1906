@@ -27,7 +27,9 @@ public class StudentSignController {
         return signService.queryByName(name);
     }
     @GetMapping("/provider/sign/all.do")
-    public R all(){
+    public R all()
+    {
+        int i=1/0;
         return signService.queryAll();
     }
 }

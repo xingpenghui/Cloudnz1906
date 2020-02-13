@@ -3,6 +3,7 @@ package com.laoxing.cloud.controller;
 import com.laoxing.cloud.model.dto.SignDto;
 import com.laoxing.cloud.model.vo.R;
 import com.laoxing.cloud.service.StudentSignService;
+import com.netflix.ribbon.proxy.annotation.Hystrix;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,6 +27,7 @@ public class StudentSignController {
     public R names(@RequestParam String name){
         return signService.names(name);
     }
+    //添加熔断
     @GetMapping("/api/sign/all.do")
     public R all(){
         return signService.all();
